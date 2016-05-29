@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/layoutTwo"
+	        android:layout_width="match_parent"
+			android:background="#454143"
+	        android:layout_height="match_parent" >	
+
+    
+	        <LinearLayout
+	             android:id="@+id/linearLayout3"
+	             android:layout_width="match_parent"
+	             android:layout_height="match_parent"
+	             android:layout_weight="0.99"
+	             android:orientation="vertical" >
+	             
+				<TableLayout android:layout_width="match_parent"
+								    android:layout_height="wrap_content" 
+								    android:layout_marginTop="15dp"
+								    android:layout_marginLeft="15dp"
+						   			android:layout_marginRight="15dp"
+						   			android:background="@drawable/black_round"
+						   			android:stretchColumns="*"  
+								    >
+			<TableRow
+		                    android:id="@+id/tableRow1"
+							android:layout_marginBottom="15dp"
+							android:layout_marginTop="15dp">
+							
+					       <ImageView
+			                android:id="@+id/infosUser"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:background="@null"
+			               	android:layout_marginLeft="7dp"
+			               	android:src="@drawable/photo_compte"
+			                android:layout_gravity="left"/>
+					       
+					        <TextView
+					            android:id="@+id/pseudoTextView"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:text="Bienvenue!! "
+					            android:textColor="#1865A3"
+					            android:textSize="15sp"
+					            android:textStyle="bold" />
+	</TableRow>
+	</TableLayout>
+	<TableLayout android:layout_width="match_parent"
+								    android:layout_height="wrap_content" 
+								    android:layout_marginTop="15dp"
+								    android:layout_marginLeft="15dp"
+						   			android:layout_marginRight="15dp"
+						   			android:background="@drawable/black_round"
+						   			android:stretchColumns="*"  
+								    >
+	<TableRow android:id="@+id/tableRow2">					 
+						 <TextView
+				            android:id="@+id/pseudoTextView"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Pseudo: "
+				            android:textSize="13sp"
+				            android:textStyle="bold" />
+				
+
+						<EditText
+				                android:id="@+id/textLoginUser"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_span="2"
+				                android:layout_weight="2.94"
+				                android:ems="8"
+				                android:textStyle="bold"
+					            android:textColor="#1865A3"
+					            android:textSize="13sp" />	
+
+			 </TableRow>
+			<TableRow android:id="@+id/tableRow2">
+
+						 <TextView
+				            android:id="@+id/Numbtext"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Numéro de téléphone "
+				            android:textSize="13sp"
+				            android:textStyle="bold" />
+				
+
+						<EditText
+				                android:id="@+id/textNumbUser"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_span="2"
+				                android:layout_weight="2.94"
+				                android:ems="8"
+				                android:textStyle="bold"
+					            android:textColor="#1865A3"
+					            android:textSize="13sp" />	
+						
+			 </TableRow>	 
+		<TableRow  android:id="@+id/tableRow2">
+				<TextView
+				            android:id="@+id/mdpTextView"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="Mot de passe: "
+				            android:textSize="13sp"
+				            android:textStyle="bold"/>
+				
+				        <EditText
+				            android:id="@+id/textMdpUser"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+							android:layout_span="2"
+					        android:ems="8"
+					        android:textColor="#1865A3"
+					        android:textSize="13sp"  />
+
+			 </TableRow>
+			 
+
+			 
+			<TableRow android:id="@+id/tableRow2"
+			      		android:layout_marginBottom="5dp"
+			    >
+			    
+			    <Button 
+							    android:id="@+id/modifCompte" 
+							    android:layout_width="wrap_content" 
+	 							android:background="@drawable/green_round" 
+							    android:layout_height="wrap_content"
+								android:layout_marginLeft="9dp"
+								android:layout_marginRight="9dp"
+								android:layout_gravity="left"
+							    android:textSize="16sp"
+							    android:text="Modifier"/>
+			    </TableRow>
+	 </TableLayout>
+	   	<TableLayout android:layout_width="match_parent"
+									android:background="@drawable/black_round"
+								    android:layout_height="wrap_content" 
+								    android:layout_marginTop="15dp"
+								    android:layout_marginLeft="15dp"
+						   			android:layout_marginRight="15dp"
+						   			android:stretchColumns="*"  >
+		        <TableRow
+				    		android:layout_marginLeft="3dp"
+				    		android:layout_marginRight="3dp"
+				    		android:id="@+id/tableRow1">
+			             
+			            <TextView
+				                android:id="@+id/monTraj"
+				                android:layout_gravity="center"
+				                android:layout_marginLeft="70dp"
+				                android:text="Compte "
+				                android:textStyle="bold"
+				                android:textColor="#D1AE13"
+				                android:textSize="20sp" />
+
+			    
+	  			</TableRow>
+	   				 
+		        <TableRow
+		                    android:id="@+id/tableRow1"
+				    		android:layout_marginLeft="3dp"
+				    		android:layout_marginRight="3dp"
+				    		android:layout_marginTop="5dp"
+		   					android:background="#FFFFFF">
+
+
+			            
+					    <Button 
+						    android:id="@+id/profil" 
+						    android:layout_width="wrap_content" 
+						    android:layout_height="wrap_content"
+							android:layout_span="3"
+							android:background="@null"
+						    android:textColor="#000000"
+						    android:drawableLeft="@drawable/moncompte"
+			                android:layout_weight="1"
+						    android:textSize="15sp"
+						    android:text="Mon profil"/>
+					            
+
+	
+			</TableRow>
+	        <TableRow
+	            android:id="@+id/tableRow1"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:background="#FFFFFF"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="15dp">
+
+
+	
+	           		<Button 
+						    android:id="@+id/avis" 
+						    android:layout_width="wrap_content" 
+						    android:layout_height="wrap_content"
+							android:layout_span="3"
+							android:background="@null"
+						    android:drawableLeft="@drawable/rating"
+			                android:layout_weight="1"
+						    android:textSize="15sp"
+						    android:textColor="#000000"
+						    android:text="Mes avis"/>
+					            
+
+	        </TableRow>
+
+		</TableLayout>
+	   	
+	</LinearLayout>
+</RelativeLayout>

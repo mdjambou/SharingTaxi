@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewTraj"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    				<Button
+							   android:id="@+id/noResultTrajet"
+							   android:layout_width="fill_parent"
+					           android:background="@drawable/black_no_round"
+					           android:layout_marginBottom="15dp"
+							   android:layout_marginTop="9dp"
+							   android:layout_marginLeft="15dp"
+			   				   android:layout_marginRight="15dp"
+							   android:layout_height="wrap_content"
+							   android:text="  Aucun résultat. Modifier vos critères de recherche. "
+							   android:textSize="14sp"
+					   		   android:layout_span="6"
+					   		   android:textColor="#f00"
+							   android:textStyle="bold"  />
+    					
+<TableLayout android:id="@+id/tableRowRes"
+	    				android:layout_width="wrap_content"
+					    android:layout_height="wrap_content" 
+					    android:layout_marginTop="15dp"
+					    android:layout_marginLeft="15dp"
+			   			android:layout_marginRight="15dp"
+			   			android:stretchColumns="*"  
+						android:background="#454143">
+		 
+		        <TableRow
+		                    android:id="@+id/tableRow1"
+							android:background="@drawable/black_no_round"
+							>		
+
+					<TextView
+						   android:id="@+id/dateText"
+						   android:layout_marginBottom="9dp"
+				           android:layout_marginTop="9dp"
+				           android:layout_width="wrap_content"
+						   android:layout_height="wrap_content"
+						   android:text="  Résultat de votre recherche "
+						   android:textSize="18sp"
+						   android:layout_gravity="center"
+						   android:layout_span="6"
+						   android:textStyle="bold"  />
+		</TableRow>
+	<TableRow
+	            android:id="@+id/tableRow1"
+				 android:layout_marginBottom="9dp"
+				android:layout_width="wrap_content"
+		   		android:layout_height="wrap_content" 
+				>
+			 
+    		<ListView android:id="@+id/listViewTrajet"
+					     android:layout_width="fill_parent"
+				        	    android:scrollbars="vertical"
+								android:layout_span="6"
+				        	    android:layout_height="wrap_content">
+					    
+					</ListView>
+	</TableRow>
+</TableLayout>	
+	
+		<TableLayout android:id="@+id/tableRowResult"
+	    				android:layout_width="wrap_content"
+					    android:layout_height="wrap_content" 
+					    android:layout_marginTop="15dp"
+					    android:layout_marginLeft="15dp"
+			   			android:layout_marginRight="15dp"
+			   			android:stretchColumns="*"  
+						android:background="#454143">
+		 
+		        <TableRow
+		                    android:id="@+id/tableRow1"
+							android:background="@drawable/black_no_round"
+							>		
+
+					<TextView
+						   android:id="@+id/dateText"
+						   android:layout_marginBottom="9dp"
+				           android:layout_marginTop="9dp"
+				           android:layout_width="wrap_content"
+						   android:layout_height="wrap_content"
+						   android:text="  Autres trajets similaires "
+						   android:textSize="18sp"
+						   android:layout_gravity="center"
+						   android:layout_span="6"
+						   android:textStyle="bold"  />
+		</TableRow>
+		<TableRow
+	            android:id="@+id/tableRow1"
+				android:layout_width="wrap_content"
+		   		android:layout_height="wrap_content" 
+				>
+            				   
+					<ListView android:id="@+id/listViewOtherTrajet"
+					     android:layout_width="fill_parent"
+				        	    android:scrollbars="vertical"
+								android:layout_span="6"
+				        	    android:layout_height="wrap_content">
+					    
+					</ListView>
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>

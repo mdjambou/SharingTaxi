@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="343dp"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ListUserPseudoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="User" />
+            
+ 			<ImageButton
+ 			    android:id="@+id/annulerButton"
+ 			    android:layout_width="wrap_content"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_weight="0.13"
+ 			    android:background="@null"
+ 			    android:src="@drawable/corbeille" />
+
+	</LinearLayout>
+    

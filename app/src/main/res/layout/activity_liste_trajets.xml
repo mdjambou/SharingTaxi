@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroundjaune"
+    android:orientation="vertical" >
+	<SurfaceView 
+	     android:id="@+id/surfaceView1"
+	     android:layout_width="fill_parent"
+		 android:layout_height="fill_parent"/>
+	
+	<RelativeLayout
+	    android:id="@+id/layout"
+		android:background="#454143"
+	    android:layout_width="200dp"
+	    android:layout_height="fill_parent" >
+   
+		        <LinearLayout
+		            android:id="@+id/linearLayout2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.01"
+		            android:orientation="vertical" >
+
+        		</LinearLayout>
+				<ListView
+				    android:id="@+id/listView1"
+				    android:layout_width="match_parent"
+        			android:clickable="true"
+        			android:layout_height="wrap_content">
+				    
+				</ListView>
+	 </RelativeLayout>
+	 <RelativeLayout
+	        android:id="@+id/layoutTwo"
+	        android:layout_width="match_parent"
+			android:background="#454143"
+	        android:layout_height="match_parent" >	
+	        <LinearLayout
+	             android:id="@+id/linearLayout3"
+	             android:layout_width="wrap_content"
+	             android:layout_height="match_parent"
+	             android:layout_weight="0.99"
+	             android:orientation="vertical" >
+	 
+
+	      <TableLayout android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" 
+				    android:layout_marginTop="15dp"
+				    android:layout_marginLeft="15dp"
+		   			android:layout_marginRight="15dp"
+		   			android:stretchColumns="*"  
+				    android:background="@drawable/black_round">			 
+			 
+		        <TableRow
+		                    android:id="@+id/tableRow1"
+							android:layout_marginTop="5dp">
+			             
+			            <TextView
+				                android:id="@+id/monTraj"
+				               	android:layout_marginLeft="15dp"
+				                android:text="Départ"
+				                android:textStyle="bold"
+				                android:textColor="#242420"
+				                android:textSize="16sp" />
+
+
+						<EditText
+				                android:id="@+id/depart"
+				                android:layout_width="wrap_content"
+				                android:layout_marginLeft="35dp"
+				                android:layout_marginRight="15dp"
+				                android:layout_height="wrap_content"
+				               	android:layout_weight="1"
+				                android:layout_span="2"
+								android:background="@drawable/black_round"
+				                android:ems="8"
+				                android:textSize="22sp" >
+
+				                <requestFocus />
+				            </EditText>
+					            
+			</TableRow>  						 
+			 
+		        <TableRow
+				    		android:layout_marginLeft="3dp"
+				    		android:layout_marginRight="3dp"
+				    		android:layout_marginBottom="5dp"
+				    		android:layout_marginTop="5dp"
+				    		android:id="@+id/tableRow1">
+			             
+			            <TextView
+				                android:id="@+id/monTraj"
+				               	android:layout_marginLeft="13dp"
+				                android:text="Arrivée"
+				                android:textStyle="bold"
+				                android:textColor="#242420"
+				                android:textSize="16sp" />
+
+					   <EditText
+				                android:id="@+id/arrivee"
+				                android:layout_width="wrap_content"
+				                android:layout_marginLeft="33dp"
+				                android:layout_height="wrap_content"
+				               	android:layout_weight="1"
+						        android:layout_marginRight="13dp"
+				                android:layout_span="2"
+								android:background="@drawable/black_round"
+				                android:ems="8"
+				                android:textSize="22sp" >
+
+				                <requestFocus />
+				            </EditText>
+					            
+				</TableRow>
+
+		        <TableRow
+				    		
+				    		android:layout_marginBottom="5dp"
+				    		android:background="@drawable/black_no_round"
+				    		android:id="@+id/tableRow1">
+			             
+			            <TextView
+				                android:id="@+id/monTraj"
+				               	android:layout_marginLeft="16dp"
+				                android:layout_marginTop="9dp"
+			               		android:layout_marginBottom="9dp"
+				                android:text="Aller"
+				                android:textStyle="bold"
+				                android:textColor="#242420"
+				                android:textSize="16sp" />
+
+						<Button 
+						    android:id="@+id/dateDisplay" 
+						    android:layout_width="wrap_content" 
+						    android:layout_height="wrap_content"
+						    android:drawableRight="@drawable/calendaricon"
+							android:layout_marginTop="9dp"
+			               	android:layout_marginBottom="9dp"
+			               	android:layout_marginLeft="36dp"
+			                android:enabled="false"
+			                android:inputType="date"
+			                android:layout_weight="1"
+			                android:text="Date"
+			                android:textColor="#1865A3"
+			               	android:background="@null"
+			                android:ems="6"
+			                android:textSize="16sp"
+			                android:textStyle="bold" />
+	
+
+		
+						<Button 
+						    android:id="@+id/timeDisplay" 
+						    android:layout_width="wrap_content" 
+						    android:layout_height="wrap_content"
+						    android:drawableRight="@drawable/clockicon"
+							android:layout_marginTop="9dp"
+			               	android:layout_marginBottom="9dp"
+			               	android:layout_marginLeft="36dp"
+			                android:enabled="false"
+			                android:inputType="date"
+			                android:layout_marginRight="13dp"
+			                android:layout_weight="1"
+			                android:textColor="#1865A3"
+			                android:text="Heure"
+			               	android:background="@null"
+			                android:ems="6"
+			                android:textSize="16sp"
+			                android:textStyle="bold" />
+
+
+	        </TableRow>		
+
+
+
+	   		  <TableRow
+	            android:id="@+id/tableRow1"
+				android:layout_width="wrap_content"
+ 			    android:background="@drawable/yellow_to_white"
+		   		android:layout_height="wrap_content" 
+				android:layout_margin="9dp">
+				        	
+				        	<ListView
+				        	    android:id="@+id/listViewTrajet"
+				        	    android:layout_width="343dp"
+				        	    android:scrollbars="vertical"
+								android:layout_span="6"
+				        	    android:layout_height="fill_parent" >
+							</ListView>
+				        
+			</TableRow>
+</TableLayout>
+</LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

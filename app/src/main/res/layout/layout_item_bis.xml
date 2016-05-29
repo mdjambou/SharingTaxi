@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:orientation="horizontal" >
+
+
+ 	<TableLayout android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" 
+				    android:layout_marginTop="8dp"
+				    android:layout_marginLeft="15dp"
+		   			android:layout_marginRight="15dp"
+		   			android:stretchColumns="*"  
+				    android:background="@drawable/black_round">			 
+			 
+
+		        <TableRow
+				    		android:orientation="vertical"
+				  			android:layout_width="wrap_content" 
+				    		android:id="@+id/tableRow1">
+
+		            <Button
+		                android:id="@+id/openButton"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginBottom="9dp"
+		                android:layout_marginTop="9dp"
+		                android:background="@null"
+		               	android:drawableLeft="@drawable/ico_taco"
+		                android:text="Trajet"
+		                android:gravity="left"
+		                android:textColor="#1865A3"
+		                android:textSize="13sp"
+		                android:textStyle="bold" />
+		  	  <TextView
+				                android:id="@+id/TrajText"
+				               	android:layout_width="wrap_content"
+		               			android:layout_marginTop="9dp"
+		               			android:layout_height="wrap_content"
+				                android:text=""
+				                android:textStyle="bold"
+				                android:textColor="#242420"
+				                android:textSize="13sp" />		            
+		            
+			</TableRow>	
+		            	
+
+
+</TableLayout>
+
+	</LinearLayout>
+    

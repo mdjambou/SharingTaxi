@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item
+        android:id="@+id/menu_compte"
+        android:icon="@drawable/moncompte"        
+        android:showAsAction="ifRoom"
+        android:title="Mon compte"/>
+         
+   <item
+        android:icon="@drawable/trajetsicon"        
+        android:id="@+id/menu_tarif"
+        android:showAsAction="ifRoom"
+        android:title="Tarif"/>
+
+   
+   <item
+        android:icon="@drawable/ico_taco"        
+        android:id="@+id/menu_taco"
+        android:showAsAction="ifRoom"
+        android:title="Taco"/>
+   
+   <item
+        android:icon="@drawable/icon_aide"        
+        android:id="@+id/menu_aide"
+        android:showAsAction="ifRoom"
+        android:title="Aide"/>
+      
+   <item
+        android:id="@+id/menu_settings"
+        android:showAsAction="ifRoom|withText"
+        android:title="Paramètres"/>
+</menu>

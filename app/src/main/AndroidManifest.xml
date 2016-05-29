@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.sharingtaxi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <permission
+        android:name="com.android.sharingtaxi.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+     <permission
+        android:name="com.android.sharingtaxi.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+     
+    <uses-permission android:name="com.android.sharingtaxi.permission.C2D_MESSAGE" />
+	<uses-permission android:name="com.android.sharingtaxi.permission.MAPS_RECEIVE"/>
+    
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/menujaune"
+        android:theme="@style/AppTheme" >
+        
+        <uses-library android:name="com.google.android.maps" />
+
+        <!-- BroadCast receiver. -->
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.android.sharingtaxi" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Intent service. -->
+        <service android:name="com.android.sharingtaxi.GCMIntentService" />
+
+        <activity
+            android:name="com.android.sharingtaxi.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.MyCalendar"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.android.sharingtaxi.InscriptionActivity"
+            android:label="@string/title_activity_inscription" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.CompteUserActivity"
+            android:label="@string/title_activity_compte_user" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.activity_connexion"
+            android:label="ResultatActivity" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.ConnexionActivity"
+            android:label="activity_connexion" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.TousLesTrajetsActivity"
+            android:label="activity_liste_trajets" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.MesTrajetsActivity"
+            android:label="@string/title_activity_mes_trajets" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.InfosCompteActivity"
+            android:label="@string/title_activity_infos_compte" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.RechercheActivity"
+            android:label="@string/title_activity_recherche" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.DetailPassagerActivity"
+            android:label="@string/title_activity_detail_passager" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.DetailAlerteActivity"
+            android:label="@string/title_activity_detail_alerte" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.MesDemandesRecuesActivity"
+            android:label="@string/title_activity_mes_demandes_recues" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.MesDemandesEnvoyeesActivity"
+            android:label="@string/title_activity_mes_demandes_envoyees" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.googlecloudmessaging.DemoActivity"
+            android:label="@string/title_activity_demo" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.MonTrajetActivity"
+            android:label="@string/title_activity_mon_trajet" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.Main2Activity"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name="com.android.sharingtaxi.CoCabActivity"
+            android:label="@string/title_activity_co_cab" >
+        </activity>
+        
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCFgylZh3XcEX3vcEFFJc1kjMn92YV-nD0" />
+    </application>
+
+</manifest>

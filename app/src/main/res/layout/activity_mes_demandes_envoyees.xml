@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundjaune"
+    android:orientation="vertical" >
+	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="match_parent"
+			android:background="@drawable/bgblack"
+	        android:layout_height="match_parent" >
+	        
+		        <LinearLayout
+		            android:id="@+id/linearLayout2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.01"
+		            android:orientation="vertical" >
+
+
+        		</LinearLayout>
+
+	        <LinearLayout
+	             android:id="@+id/linearLayout3"
+	             android:layout_width="wrap_content"
+	             android:layout_height="match_parent"
+	             android:layout_weight="0.99"
+	             android:orientation="vertical" >
+	 
+				<TableLayout android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" android:stretchColumns="*"
+				    android:background="@drawable/bgblack">
+	   				 
+		        <TableRow
+		                    android:id="@+id/tableRow1"
+							android:layout_margin="9dp">
+
+	   				     <ImageButton
+	   				         android:id="@+id/button1"
+						     android:background="@null"
+	   				         android:layout_gravity="left"
+ 	   						 android:layout_span="3"
+	   				         android:src="@drawable/menuicon" />
+	   				    
+	   				<!--     <ImageButton
+	   				         android:id="@+id/home"
+ 						     android:background="@null"
+	   				         android:layout_marginLeft="120dp"
+	 						 android:layout_span="3"
+	   				         android:src="@drawable/home" /> --> 
+	   				     
+	   				     <ImageButton
+	   				         android:id="@+id/deconnexion"
+ 						     android:background="@null"
+	   				         android:layout_marginLeft="8dp"
+	 						 android:layout_span="3"
+	   				         android:src="@drawable/logouticon2" />
+	
+	          </TableRow>
+	   		  <TableRow
+		                    android:id="@+id/tableRow1"
+							android:layout_marginLeft="9dp"
+							android:layout_marginRight="9dp"
+							android:layout_marginBottom="9dp"
+							android:background="@drawable/banngrise2">
+
+			            <TextView
+			                android:id="@+id/ListDepart"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_weight="1"
+				            android:textColor="#FFFFFF"
+			                android:gravity="center"
+			                android:padding="5px"
+			                android:text="REPONSES RECUES"
+			                android:textStyle="bold" 
+			                android:textSize="24sp" />
+        </TableRow>
+
+	   		  <TableRow
+	            android:id="@+id/tableRow1"
+				android:layout_width="wrap_content"
+ 			    android:background="@drawable/yellow_to_white"
+		   		android:layout_height="wrap_content" 
+				android:layout_margin="9dp">
+				        	
+				        	<ListView
+				        	    android:id="@+id/listViewMesDemandesEnvoyees"
+				        	    android:layout_width="343dp"
+				        	    android:scrollbars="vertical"
+								android:layout_span="6"
+				        	    android:layout_height="fill_parent" >
+							</ListView>
+				        
+			</TableRow>
+</TableLayout>
+</LinearLayout>
+</LinearLayout>
+</FrameLayout>
+</LinearLayout>

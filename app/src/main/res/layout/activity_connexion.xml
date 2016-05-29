@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+	 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/layoutTwo"
+	        android:layout_width="match_parent"
+			android:background="#454143"
+	        android:layout_height="match_parent" >	
+	        <LinearLayout
+	             android:id="@+id/linearLayout3"
+	             android:layout_width="match_parent"
+	             android:layout_height="match_parent"
+	             android:layout_weight="0.99"
+	             android:orientation="vertical" >
+	             
+				<TableLayout android:layout_width="match_parent"
+								    android:layout_height="wrap_content" 
+								    android:layout_marginTop="15dp"
+								    android:layout_marginLeft="15dp"
+						   			android:layout_marginRight="15dp"
+						   			android:stretchColumns="*"  
+								    android:background="@drawable/black_round">
+		        <EditText
+	                        android:id="@+id/numTel"
+	                        android:layout_marginTop="15dp"
+							android:layout_marginLeft="15dp"
+						   	android:layout_marginRight="15dp"
+						   	android:background="@drawable/black_round"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="center"
+	                        android:hint="Numéro de mobile" />
+		        <EditText
+	                        android:id="@+id/mdp"
+	                        android:layout_marginTop="9dp"
+	                        android:gravity="center"
+	                        android:layout_marginBottom="9dp"
+							android:layout_marginLeft="15dp"
+						   	android:layout_marginRight="15dp"
+						   	android:background="@drawable/black_round"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:hint="Mot de passe"
+	                        android:password="true" />
+
+
+			    <Button
+	                    android:id="@+id/connecter"
+	                    android:layout_width="match_parent" 
+						android:background="@drawable/yellow_round"
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="46dp"
+						android:layout_marginRight="46dp"
+						android:layout_marginBottom="5dp"
+					    android:textColor="#EBEAE6"	
+					    android:textStyle="bold"
+	                    android:text="Se connecter"
+	                    android:textSize="15sp" />
+			   	<Button
+	                    android:id="@+id/inscrire"
+	                    android:layout_width="match_parent" 
+						android:background="@drawable/yellow_round"
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="46dp"
+						android:layout_marginRight="46dp"
+					    android:layout_marginBottom="15dp"
+					    android:textColor="#EBEAE6"	
+					    android:textStyle="bold"
+	                    android:text="  Vous n'avez pas de compte? Inscrivez-vous!  "
+	                    android:textSize="15sp" />
+		</TableLayout>
+	</LinearLayout>
+</RelativeLayout>

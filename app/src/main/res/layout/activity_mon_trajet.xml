@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	        <LinearLayout
+	             android:id="@+id/linearLayout3"
+	             android:layout_width="fill_parent"
+	             android:layout_height="wrap_content"
+	             android:orientation="vertical" 
+	             android:scrollbars="vertical"
+	             >
+	 
+				<TableLayout android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"  >
+	   				 
+		        <TableRow
+		                    android:id="@+id/tableRow1"
+							android:layout_width="fill_parent"
+				   			android:layout_height="wrap_content" 
+				    		android:layout_marginBottom="10dp"
+							android:background="#2541B0">
+
+	   		 			
+			            
+			            <TextView
+				                android:id="@+id/monTraj"
+								android:layout_width="wrap_content"
+					   			android:layout_height="wrap_content"
+				   			    android:layout_gravity="center"
+				                android:layout_marginLeft="100dp"
+				                android:text="My CoCab "
+				                android:textSize="22sp"
+				                android:textColor="#FFFFFF"
+				                android:textStyle="bold"  />
+	   				     
+	   		 			<Button
+	   				         android:id="@+id/home"
+						     android:drawableLeft="@drawable/home"
+				             android:layout_marginLeft="30dp"
+	   				         android:background="@null" />
+	
+	          </TableRow>
+	     </TableLayout>
+	   	<TableLayout android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" 
+				    android:layout_marginLeft="15dp"
+		   			android:layout_marginRight="15dp"
+		   			android:stretchColumns="*"  
+				    android:background="@drawable/black_round">			 
+			 
+		        <TableRow
+		                    android:id="@+id/tableRow1"
+							android:layout_marginTop="5dp">
+			             
+			            <TextView
+				                android:id="@+id/monTraj"
+				                android:layout_marginLeft="70dp"
+				                android:text="Adresse de départ"
+				                android:textStyle="bold"
+				                android:textColor="#2541B0"
+				                android:textSize="20sp" />
+
+			    
+	  			</TableRow>
+	   				 
+		        <TableRow
+		                    android:id="@+id/tableRow1"
+				    		android:layout_marginLeft="3dp"
+				    		android:layout_marginRight="3dp"
+				    		android:layout_marginTop="5dp"
+				    		android:layout_marginBottom="5dp"
+		   					android:background="#FFFFFF">
+
+						<EditText
+				                android:id="@+id/depart"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_span="2"
+				                android:layout_weight="2.94"
+				                android:ems="8"
+				                android:textSize="12sp" >
+
+				                <requestFocus />
+				            </EditText>
+					            
+
+	
+			</TableRow>
+  				
+		</TableLayout>
+
+	   	<TableLayout android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" 
+				    android:layout_marginTop="10dp"
+				    android:layout_marginBottom="10dp"
+				    android:layout_marginLeft="15dp"
+		   			android:layout_marginRight="15dp"
+		   			android:stretchColumns="*"  
+				    android:background="@drawable/black_round">			 
+			 
+		        <TableRow
+				    		android:layout_marginLeft="3dp"
+				    		android:layout_marginRight="3dp"
+				    		android:layout_marginBottom="5dp"
+				    		android:id="@+id/tableRow1">
+			             
+			            <TextView
+				                android:id="@+id/monTraj"
+				                android:layout_marginLeft="70dp"
+				                android:text="Adresse de destination "
+				                android:textStyle="bold"
+				                android:textColor="#2541B0"
+				                android:textSize="20sp" />
+
+			    
+	  			</TableRow>
+	   				 
+		        <TableRow
+		                    android:id="@+id/tableRow1"
+				    		android:layout_marginLeft="3dp"
+						    android:layout_marginBottom="5dp"
+				    		android:layout_marginRight="3dp"
+				    		android:layout_marginTop="5dp"
+		   					android:background="#FFFFFF">
+
+
+			            
+					   <EditText
+				                android:id="@+id/arrivee"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_span="2"
+				                android:layout_weight="2.94"
+				                android:ems="8"
+				                android:textSize="12sp" >
+
+				                <requestFocus />
+				            </EditText>
+					            
+
+	
+			</TableRow>
+	        
+	   	</TableLayout>
+	 	<TableLayout android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" 
+				    android:layout_marginTop="10dp"
+				    android:layout_marginBottom="10dp"
+				    android:layout_marginLeft="15dp"
+		   			android:layout_marginRight="15dp"
+		   			android:stretchColumns="*"  
+				    android:background="@drawable/black_round">			 
+			    	
+	 			<TableRow
+				    		android:layout_marginTop="5dp"
+				    		android:layout_marginLeft="3dp"
+				    		android:layout_marginRight="3dp"
+				    		android:layout_marginBottom="5dp"
+				    		android:background="#FFFFFF"
+				    		android:id="@+id/tableRow1">
+
+	
+	            <EditText
+	                android:id="@+id/dateDisplay"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:enabled="false"
+	                android:inputType="date"
+	                android:layout_weight="1"
+	                android:text="Quand?"
+	                android:ems="6"
+	                android:textSize="15sp"
+	                android:textStyle="bold" />
+	
+	            <ImageButton
+	                android:id="@+id/pickDate"
+				    android:background="@null"
+	                android:layout_weight="1"
+	                android:src="@drawable/calendaricon" />
+	
+
+	
+	            <EditText
+	                android:id="@+id/timeDisplay"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:enabled="false"
+	                android:inputType="date"
+	                android:layout_weight="1"
+	                android:textSize="15sp"
+	                android:ems="6"
+	                android:text="Heure?"
+	                android:textStyle="bold" />
+	
+	            <ImageButton
+	                android:id="@+id/pickTime"
+ 				    android:background="@null"
+	                android:layout_weight="1"
+	                android:src="@drawable/clockicon" />
+	        </TableRow>
+	   	</TableLayout>
+	   	
+	   	<TableLayout android:layout_width="wrap_content"
+				    android:layout_height="wrap_content" 
+				    android:layout_marginTop="10dp"
+				    android:layout_marginBottom="10dp"
+				    android:layout_marginLeft="100dp"
+		   			android:layout_marginRight="100dp"
+		   			android:stretchColumns="*"  
+				    android:background="@drawable/black_round">			 
+			 
+		        <TableRow
+	
+				    		android:layout_marginBottom="5dp"
+				    		android:id="@+id/tableRow1">
+					<Button 
+						    android:id="@+id/rechercher" 
+						    android:layout_width="wrap_content" 
+						    android:layout_height="wrap_content"
+							android:layout_span="3"
+							android:background="@null"
+						    android:textColor="#000000"
+						    android:drawableLeft="@drawable/rech"
+			                android:layout_weight="1"
+						    android:textSize="15sp"
+						    android:text="Rechercher"/>
+			   </TableRow>
+			</TableLayout>
+	</LinearLayout>
+</RelativeLayout>
